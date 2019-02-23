@@ -1,7 +1,7 @@
 
-Test cases
+@Functional
 
- Scenario 1: 'Say Hello' demo
+ @Scenario1: 'Say Hello' demo
     Given User opens Selendroid application
     When User clicks on Chrome icon
     And User provides user details (name, preferred car) and click on send me your name button
@@ -9,12 +9,12 @@ Test cases
     When User clicks on Go to Homescreen button
     Then Homepage should be displayed
     
- Scenario 2: Show Progress Bar
+ @Scenario2: Show Progress Bar
     Given User opens Selendroid application
     When User clicks on Show Progress Bar for a while button
     Then Waiting dialog should be displayed and stay on the screen for a while
 
-  Scenario 3: Register a new Selendroid User
+ @Scenario3: Register a new Selendroid User
     Given User opens Selendroid application
     When User clicks on Create New User button
     And User provides user details and click on register user(verify) button
@@ -22,7 +22,7 @@ Test cases
     When User clicks on register user button
     Then Homepage should be displayed
     
-  Scenario 4: Show Progress Bar
+ @Scenario4: Show Progress Bar
     Given User opens Selendroid application
     When User clicks on Display popup window button
     Then Popup window should be displayed with a dismiss button on it
